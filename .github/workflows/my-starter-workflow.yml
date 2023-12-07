@@ -12,9 +12,6 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy to your project.
-
           call-reusable-workflow:
           strategy:
             matrix:
