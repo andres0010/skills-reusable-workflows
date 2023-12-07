@@ -1,4 +1,8 @@
 name: My Starter Workflow
+          call-reusable-workflow:
+          uses: ./.github/workflows/reusable-workflow.yml
+          with:
+            node: 14
 
 on:
   workflow_dispatch:
@@ -14,8 +18,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy to your project.
-          
-          call-reusable-workflow:
-          uses: ./.github/workflows/reusable-workflow.yml
-          with:
-            node: 14
